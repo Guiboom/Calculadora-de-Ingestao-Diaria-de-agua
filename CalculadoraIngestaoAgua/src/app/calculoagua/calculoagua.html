@@ -5,13 +5,13 @@
     <input type="number" [(ngModel)]="peso" placeholder="Peso Ex:75">
 
     <p>Selecione um nível de atividade:</p>
-    <button (click)="nivelAtividade = 1.0">Sedentário (1.0)</button>
-    <button (click)="nivelAtividade = 1.2">Moderado (1.2)</button>
-    <button (click)="nivelAtividade = 1.5">Intenso (1.5)</button>
-   
-    <p>Multiplicador: {{ nivelAtividade }}</p>
+    <div class="selecaoBotoes">
+        <button (click)="nivelAtividade = 1.0">Sedentário</button>
+        <button (click)="nivelAtividade = 1.2">Moderado</button>
+        <button (click)="nivelAtividade = 1.5">Intenso</button>
+    </div>
 
-    <button (click)="calcularIngestao()">Enviar</button>
+    <button id="enviar" (click)="calcularIngestao()">Enviar</button>
 
     <div class="resultado" *ngIf="resultado">
         <h3><strong>{{ resultado }}</strong></h3>

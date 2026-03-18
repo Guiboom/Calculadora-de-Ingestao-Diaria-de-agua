@@ -1,10 +1,10 @@
-import { Component,} from '@angular/core'; /* numberAttribute  */
+import { Component, } from '@angular/core'; /* numberAttribute  */
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-calculoagua',
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './calculoagua.html',
   styleUrl: './calculoagua.css',
 })
@@ -14,17 +14,17 @@ export class Calculoagua {
   nivelAtividade: number = 0;
   aguaMl: number = 0;
   garrafas: number = 0;
-  resultado: String = '';
-  aviso: String = '';
+  resultado: string = '';
+  aviso: string = '';
 
   calcularIngestao() {
-    if (this.peso > 0 && this.nivelAtividade > 0){
-      this.aguaMl = (this.peso * 35) * this.nivelAtividade
-      this.garrafas = Math.ceil(this.aguaMl/500)
-      this.resultado = `Meta diária: ${this.garrafas} garrafas de 500ml, Total ${(this.aguaMl/1000).toFixed(1)} litros.`
+    if (this.peso > 0 && this.nivelAtividade > 0) {
+      this.aguaMl = ((this.peso * 35) * this.nivelAtividade) / 1000
+      this.garrafas = Math.ceil(this.aguaMl / 500)
+      this.resultado = `Meta diária: ${this.garrafas} garrafas de 500ml, Total ${(this.aguaMl).toFixed(1)} litros.`
       this.aviso = "Use garrafas reutilizáveis e ajude o planeta 🌱"
     }
-    else{
+    else {
       this.resultado = "Valor invalido"
       this.aviso = "Tente novamente"
 

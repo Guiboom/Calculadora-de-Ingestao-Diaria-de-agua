@@ -39,7 +39,7 @@ button {
     width: 120px;
     height: 40px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
@@ -68,4 +68,18 @@ button:hover {
     color: black;
     border-radius: 30px;
     padding: 10px;
+}
+
+.selecaoBotoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#enviar {
+    height: 50px;
+    width: 200px;
 }
