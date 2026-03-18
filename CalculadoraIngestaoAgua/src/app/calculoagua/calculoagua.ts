@@ -26,6 +26,8 @@ export class Calculoagua {
     }
     else{
       this.resultado = "Valor invalido"
+      this.aviso = "Tente novamente"
+
       console.log("Valor invalido")
     }
   }
