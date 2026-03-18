@@ -1,0 +1,71 @@
+/* No maioridade.css */
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(42, 112, 158);
+    color: beige;
+
+
+    /*  Fonte e cores */
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: var(--text);
+}
+
+h1,
+p,
+h2,
+h3 {
+    color: beige;
+}
+
+input {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    color: rgb(65, 65, 65);
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    margin: 8px;
+}
+
+button {
+    background-color: beige;
+    height: 35px;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    color: white;
+    background-color: rgba(90, 168, 26, 0.541);
+    ;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(90, 168, 26, 0.541);
+    color: black;
+    border-radius: 30px;
+    padding: 10px;
+}
